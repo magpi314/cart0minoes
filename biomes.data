@@ -1,0 +1,22 @@
+# ("label", aridity_range, nullevation_range, interiority_range, on_island, in_gorge, biomass, display, color)
+
+# plains biomes
+("wetland", (0, 3), (15, 999), (0, 0), (False, False), (False, False), 50, '."·', (0, 180, 255)) 
+("forest", (0, 3), (3, 14), (0, 0), (False, False), (False, False), 40, "♣♠.", (0, 180, 0))
+("grassland", (4, 9), (3, 999), (0, 0), (False, False), (False, False), 20, '...""', (0, 255, 0))
+("desert", (10, 21), (3, 999), (0, 0), (False, True), (False, False), 1, "~.", (255, 180, 0))
+("tundra", (22, 999), (3, 999), (0, 0), (False, True), (False, False), 1, "~.", (255, 200, 180))
+
+# near mountain biomes
+("woodland foothills", (0, 5), (1, 2), (0, 0), (False, False), (False, False), 35, "∩↟.", (0, 180, 0))
+("shrubland foothills", (6, 999), (1, 2), (0, 0), (False, False), (False, False), 15, '∩".', (170, 200, 0))
+
+# mountain biomes
+("montane forest", (0, 5), (0, 0), (1, 2), (False, False), (False, False), 30, "ΔΔ", (150, 180, 0))
+("montane shrubland", (6, 8), (0, 0), (1, 2), (False, False), (False, False), 10, "ΔΔ", (170, 200, 0))
+("tundra", (9, 999), (0, 0), (1, 2), (False, False), (False, False), 5, "", None)
+("glacier", (0, 999), (0, 0), (3, 999), (False, False), (False, False), 1, "▲▲", (255, 255, 255))
+
+# special biomes
+("tropical garden", (0, 999), (1, 999), (0, 0), (True, True), (False, False), 100, ".Γ♣♠✿", (0, 127, 35))
+("mesa", (0, 999), (1, 999), (0, 0), (False, False), (True, True), 5, "o.", (255, 180, 0))
