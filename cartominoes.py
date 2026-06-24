@@ -495,8 +495,10 @@ def main():
                         pygame.mixer.Sound.play(error_sound)
                     else:
                         next_tile, next_colors, good_spaces = generate_tile(grid)
-                        old_tile.append(next_tile)
-                        old_colors.append(next_colors)
+                        old_tile.appendleft(current_tile)
+                        old_colors.appendleft(current_colors)
+                        current_tile = next_tile
+                        current_colors = next_colors
                         pygame.mixer.Sound.play(remove_tile)
                         # fgrid, fbiomes, map_image, fminimap_image = update_map(grid, clouds)
                         # del fgrid, fbiomes, fminimap_image             
