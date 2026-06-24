@@ -797,7 +797,7 @@ def main():
         #     # draw_animal(x + 30, y + 50, selected_card)
         #     pygame.draw.rect(screen, WHITE, (x, y, 110, 106), 2, border_radius=3)
 
-        y, i = 250, -16
+        y, i = 75 + 3 * grid_height, -16 # y was 250
         for biome in discoveries:
             i += 16
             fontcolor = WHITE if biome == selected_biome_name else GREEN
